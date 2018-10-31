@@ -1,0 +1,9 @@
+{
+  "copyTo": {
+    "lib/en-us_web/": ["manifest_web.xml", "src/index.html"],
+
+    "dist/en-us_web": ["lib/en-us_web/**/*"],
+
+    "dist/en-us_web/assets": ["assets/**"]
+  }
+}
