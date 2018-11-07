@@ -1,3 +1,37 @@
+# Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+# See LICENSE in the project root for license information.
+
+# Created by https://www.gitignore.io/api/osx,windows
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+### Windows ###
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -14,132 +48,17 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-# =========================
-# Operating System Files
-# =========================
+# Windows shortcuts
+*.lnk
 
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Generated files
-*.scss.ts
-
-# Files that might appear on external disk
-.Spotlight-V100
-.Trashes
-
-.bin
-dist.stats.json
-bower_components
-node_modules
-temp
-lib
-lib-amd
-coverage
-dist
-npm-debug.log
-npm-debug.log.*
-pnpm-debug.log
-pnpm-debug.log.*
-npminstall-log.txt
-test-dependencies
-screenshots
-
-*.tar.gz
-*.nupkg
-
-# Drop Folder
-drop/
-
-# APPX Package
-*.appx
-
-# Events Generated Code
-*.event.ts
-
-# Resx Generated Code
-*.resx.ts
-
-# Visual Studio Temp Project
-.vs/
-bin/
-*.suo
-*.csproj.user
-*.userosscache
-*.sublime-project
-*.sublime-workspace
+# Ignore the following folders
+.vs
 .idea
-/.settings/
-OneDrive.sln.ide/*
-
-# NPM Install Temp
-__temp/
-
-# Deploy symlinks
-_Deploy
-
-# Commit meta data
-commit.txt
-
-# Webpart typings
-typings/webpart-framework
-typings/webparts
-
-# Configs that contain sensitive information
-TDSDeployConfig.json
-
-# FTP config
-ftpconfig.json
-
-# Package output folder
-package
-
-# Log files from building
 *.log
+obj
+bin
+*.user
 
-# Dependency change files generated from npmx aka rush
-package-deps.json
-package-lock.json
-
-# Rush temp files.
-common/temp
-
-/packages/flexample/index.android.js
-/packages/flexample/index.android.bundle.meta
-/packages/flexample/index.android.bundle
-
-# Xcode
-!**/*.xcodeproj
-!**/*.pbxproj
-!**/*.xcworkspacedata
-!**/*.xcsettings
-!**/*.xcscheme
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata
-*.xccheckout
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
-*.xcuserstate
-project.xcworkspace
-
-# local min build config file
-/min-build-config.json
-/packages/hxplatform/src/Telemetry/*.g.*
-
-*-publish.nuspec
+node_modules/**
+typings/**
+.vscode/**
