@@ -741,6 +741,10 @@
     "@babel/runtime" "7.0.0"
     recompose "^0.29.0"
 
+"@microsoft/office-js@^1.1.11-operational.0":
+  version "1.1.11-operational.0"
+  resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/@microsoft/office-js/-/office-js-1.1.11-operational.0.tgz#bab71a47c2b5b4a7923abde4eeb0724794c0bf4b"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

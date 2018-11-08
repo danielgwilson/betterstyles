@@ -38,9 +38,11 @@ class App extends Component {
             );
         });
         return (
-            <div className="App">
-                <div className="App-body">{styleCardsJSX}</div>
-            </div>
+            <React.Fragment className="App">
+                <React.Fragment className="App-body">
+                    {styleCardsJSX}
+                </React.Fragment>
+            </React.Fragment>
         );
     }
 }
