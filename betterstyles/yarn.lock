@@ -793,13 +793,6 @@
     csstype "^2.0.0"
     indefinite-observable "^1.0.1"
 
-"@types/material-ui@^0.21.5":
-  version "0.21.5"
-  resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/@types/material-ui/-/material-ui-0.21.5.tgz#a93cc4a551f7c07a0ec54e52b4ad7994a5a9450e"
-  dependencies:
-    "@types/react" "*"
-    "@types/react-addons-linked-state-mixin" "*"
-
 "@types/node@*", "@types/node@10.12.6":
   version "10.12.6"
   resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/@types/node/-/node-10.12.6.tgz#7fc213c1b811c90fc9a3edb6206742b95d697678"
@@ -807,12 +800,6 @@
 "@types/prop-types@*":
   version "15.5.6"
   resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/@types/prop-types/-/prop-types-15.5.6.tgz#9c03d3fed70a8d517c191b7734da2879b50ca26c"
-
-"@types/react-addons-linked-state-mixin@*":
-  version "0.14.20"
-  resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/@types/react-addons-linked-state-mixin/-/react-addons-linked-state-mixin-0.14.20.tgz#5f0cd884ace049d538982a3b254f4807b9395eb6"
-  dependencies:
-    "@types/react" "*"
 
 "@types/react-dom@16.0.9":
   version "16.0.9"
@@ -8203,9 +8190,9 @@ typeface-roboto@^0.0.54:
   version "0.0.54"
   resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/typeface-roboto/-/typeface-roboto-0.0.54.tgz#8f02c9a18d1cfa7f49381a6ff0d21ff061f38ad2"
 
-typescript@3.2.0-dev.20181025:
-  version "3.2.0-dev.20181025"
-  resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/typescript/-/typescript-3.2.0-dev.20181025.tgz#bb7b7faedf02fb46322dbffbc85417ed4a89a21b"
+typescript@^3.1.6:
+  version "3.1.6"
+  resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/typescript/-/typescript-3.1.6.tgz#b6543a83cfc8c2befb3f4c8fba6896f5b0c9be68"
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
