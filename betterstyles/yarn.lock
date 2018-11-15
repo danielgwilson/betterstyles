@@ -797,6 +797,10 @@
   version "10.12.6"
   resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/@types/node/-/node-10.12.6.tgz#7fc213c1b811c90fc9a3edb6206742b95d697678"
 
+"@types/office-js@^0.0.133":
+  version "0.0.133"
+  resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/@types/office-js/-/office-js-0.0.133.tgz#f1192672506f5311b7eebbe3fdded6f7a1ab3db7"
+
 "@types/prop-types@*":
   version "15.5.6"
   resolved "https://office.pkgs.visualstudio.com/_packaging/Office/npm/registry/@types/prop-types/-/prop-types-15.5.6.tgz#9c03d3fed70a8d517c191b7734da2879b50ca26c"
