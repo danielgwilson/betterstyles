@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-// import logo from "./logo.svg";
+import logo from "./logo.svg";
 import "./App.css";
-import "./StyleCard";
 import StyleCard from "./StyleCard";
 
 class App extends Component {
@@ -28,21 +27,21 @@ class App extends Component {
                 properties: { fontSize: 11, fontFamily: "roboto" }
             }
         ];
-        const styleCardsJSX = styleCards.map(function(styleCard, index) {
-            return (
-                <StyleCard
-                    key={index}
-                    name={styleCard.name}
-                    properties={styleCard.properties}
-                />
-            );
-        });
+        // const styleCardsJSX = styleCards.map(function(styleCard, index) {
+        //     return (
+        //         <StyleCard
+        //             key={index}
+        //             name={styleCard.name}
+        //             properties={styleCard.properties}
+        //         />
+        //     );
+        // });
         return (
-            <React.Fragment className="App">
-                <React.Fragment className="App-body">
-                    {styleCardsJSX}
-                </React.Fragment>
-            </React.Fragment>
+            <div className="App">
+                <div className="App-body">
+                    <StyleCard name="test" styleProps="props" />
+                </div>
+            </div>
         );
     }
 }
