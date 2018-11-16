@@ -21,11 +21,19 @@ class App extends Component {
             },
             {
                 name: "bold",
-                styleProps: { fontSize: 11, fontFamily: "roboto" }
+                styleProps: {
+                    fontSize: 11,
+                    fontFamily: "roboto",
+                    fontWeight: "bold"
+                }
             },
             {
                 name: "italic",
-                styleProps: { fontSize: 11, fontFamily: "roboto" }
+                styleProps: {
+                    fontSize: 11,
+                    fontFamily: "roboto",
+                    fontStyle: "italic"
+                }
             }
         ];
         const styleCardsJSX = styleCards.map(function(styleCard, index) {
