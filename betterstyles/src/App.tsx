@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import StyleCard from "./components/StyleCard";
-// import StyleCard from "./StyleCard";
+import { applyStyle } from "./scripts";
 
 class App extends Component {
     render() {
@@ -21,11 +21,19 @@ class App extends Component {
             },
             {
                 name: "bold",
-                styleProps: { fontSize: 11, fontFamily: "roboto" }
+                styleProps: {
+                    fontSize: 11,
+                    fontFamily: "roboto",
+                    fontWeight: "bold"
+                }
             },
             {
                 name: "italic",
-                styleProps: { fontSize: 11, fontFamily: "roboto" }
+                styleProps: {
+                    fontSize: 11,
+                    fontFamily: "roboto",
+                    fontStyle: "italic"
+                }
             }
         ];
         const styleCardsJSX = styleCards.map(function(styleCard, index) {
@@ -34,6 +42,9 @@ class App extends Component {
                     key={index}
                     name={styleCard.name}
                     styleProps={styleCard.styleProps}
+                    onClick={function() {
+                        return applyStyle(styleCard.styleProps);
+                    }}
                 />
             );
         });

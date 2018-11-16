@@ -41,13 +41,14 @@ const styles = createStyles({
 interface Props extends WithStyles<typeof styles> {
     name: string;
     styleProps: any;
+    onClick: any;
 }
 
 type State = {};
 
 class StyleCard extends React.Component<Props, any> {
     render() {
-        const { classes, name, styleProps } = this.props;
+        const { classes, name, styleProps, onClick } = this.props;
 
         // generate style overrides string from properties
         let styleString = "";
@@ -59,7 +60,7 @@ class StyleCard extends React.Component<Props, any> {
 
         return (
             <Card className={classes.card}>
-                <CardActionArea>
+                <CardActionArea onClick={onClick}>
                     <CardContent>
                         <Typography className={classes.name} style={styleProps}>
                             {name}
