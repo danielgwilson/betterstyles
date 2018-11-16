@@ -1,13 +1,16 @@
 {
-  "main.css": "/static/css/main.71037081.chunk.css",
-  "main.js": "/static/js/main.3bce8f39.chunk.js",
-  "main.js.map": "/static/js/main.3bce8f39.chunk.js.map",
-  "static/js/1.a3d4cebc.chunk.js": "/static/js/1.a3d4cebc.chunk.js",
-  "static/js/1.a3d4cebc.chunk.js.map": "/static/js/1.a3d4cebc.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.71037081.chunk.css.map": "/static/css/main.71037081.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.ac90084c5013d8467e6bef31a92c885f.js": "/precache-manifest.ac90084c5013d8467e6bef31a92c885f.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/betterstyles/static/css/main.3a5759ca.chunk.css",
+  "main.js": "/betterstyles/static/js/main.c4f9153e.chunk.js",
+  "main.js.map": "/betterstyles/static/js/main.c4f9153e.chunk.js.map",
+  "static/css/1.162eb17c.chunk.css": "/betterstyles/static/css/1.162eb17c.chunk.css",
+  "static/js/1.42ec0817.chunk.js": "/betterstyles/static/js/1.42ec0817.chunk.js",
+  "static/js/1.42ec0817.chunk.js.map": "/betterstyles/static/js/1.42ec0817.chunk.js.map",
+  "runtime~main.js": "/betterstyles/static/js/runtime~main.a55440a9.js",
+  "runtime~main.js.map": "/betterstyles/static/js/runtime~main.a55440a9.js.map",
+  "static/media/index.css": "/betterstyles/static/media/roboto-latin-900italic.bc833e72.woff",
+  "static/css/main.3a5759ca.chunk.css.map": "/betterstyles/static/css/main.3a5759ca.chunk.css.map",
+  "static/css/1.162eb17c.chunk.css.map": "/betterstyles/static/css/1.162eb17c.chunk.css.map",
+  "index.html": "/betterstyles/index.html",
+  "precache-manifest.ada8dc5a4e9711b1055fff9dff0747ee.js": "/betterstyles/precache-manifest.ada8dc5a4e9711b1055fff9dff0747ee.js",
+  "service-worker.js": "/betterstyles/service-worker.js"
 }

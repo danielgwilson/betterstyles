@@ -19,7 +19,9 @@
         "start": "set HTTPS=true&&react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "eject": "react-scripts eject",
+        "predeploy": "react-scripts build",
+        "deploy": "gh-pages -d build"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -31,6 +33,8 @@
         "not op_mini all"
     ],
     "devDependencies": {
-        "@types/office-js": "^0.0.133"
-    }
+        "@types/office-js": "^0.0.133",
+        "gh-pages": "^2.0.1"
+    },
+    "homepage": "http://danielgwilson.github.io/betterstyles"
 }
