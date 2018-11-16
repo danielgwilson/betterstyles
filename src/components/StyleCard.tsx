@@ -49,9 +49,8 @@ const styles = createStyles({
         transform: "rotate(180deg)"
     },
     actions: {
-        display: "flex",
-    },
-
+        display: "flex"
+    }
 });
 
 interface Props extends WithStyles<typeof styles> {
@@ -95,7 +94,7 @@ class StyleCard extends React.Component<Props, any> {
                         </Typography>
                     </div>
                     <IconButton className={classes.expand}>
-                        <ExpandMoreIcon/>
+                        <ExpandMoreIcon />
                     </IconButton>
                 </CardActions>
             </Card>
