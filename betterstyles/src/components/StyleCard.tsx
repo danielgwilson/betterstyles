@@ -6,8 +6,10 @@ import withStyles, { WithStyles } from "@material-ui/core/styles/withStyles";
 
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
-// import CardActions from "@material-ui/core/CardActions";
+import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import IconButton from "@material-ui/core/IconButton";
 // import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
@@ -29,13 +31,27 @@ const styles = createStyles({
     pos: {
         marginBottom: 12
     },
+    stylePropsContainer: {
+        padding: "12px 8px 8px 12px"
+    },
     properties: {
         fontSize: 10
     },
     name: {
         fontSize: "11pt",
         fontFamily: "Calibri"
-    }
+    },
+    expand: {
+        transform: "rotate(0deg)",
+        marginLeft: "auto"
+    },
+    expandOpen: {
+        transform: "rotate(180deg)"
+    },
+    actions: {
+        display: "flex",
+    },
+
 });
 
 interface Props extends WithStyles<typeof styles> {
@@ -44,7 +60,9 @@ interface Props extends WithStyles<typeof styles> {
     onClick: any;
 }
 
-type State = {};
+type State = {
+    expanded: boolean;
+};
 
 class StyleCard extends React.Component<Props, any> {
     render() {
@@ -65,14 +83,21 @@ class StyleCard extends React.Component<Props, any> {
                         <Typography className={classes.name} style={styleProps}>
                             {name}
                         </Typography>
+                    </CardContent>
+                </CardActionArea>
+                <CardActions className={classes.actions} disableActionSpacing>
+                    <div className={classes.stylePropsContainer}>
                         <Typography
                             className={classes.properties}
                             color="textSecondary"
                         >
                             {styleString}
                         </Typography>
-                    </CardContent>
-                </CardActionArea>
+                    </div>
+                    <IconButton className={classes.expand}>
+                        <ExpandMoreIcon/>
+                    </IconButton>
+                </CardActions>
             </Card>
         );
     }
