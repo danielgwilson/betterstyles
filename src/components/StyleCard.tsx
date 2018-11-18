@@ -6,7 +6,7 @@ import withStyles, { WithStyles } from "@material-ui/core/styles/withStyles";
 
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
+import { Collapse } from "@material-ui/core";
 import CardContent from "@material-ui/core/CardContent";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import IconButton from "@material-ui/core/IconButton";
@@ -19,6 +19,9 @@ const styles = createStyles({
     card: {
         minWidth: 275,
         marginBottom: 8
+    },
+    cardMainDiv: {
+        display: "flex"
     },
     bullet: {
         display: "inline-block",
@@ -43,7 +46,8 @@ const styles = createStyles({
     },
     expand: {
         transform: "rotate(0deg)",
-        marginLeft: "auto"
+        top: "50%",
+        margin: "auto"
     },
     expandOpen: {
         transform: "rotate(180deg)"
@@ -63,7 +67,15 @@ type State = {
     expanded: boolean;
 };
 
-class StyleCard extends React.Component<Props, any> {
+class StyleCard extends React.Component<Props, State> {
+    state = {
+        expanded: false
+    };
+
+    handleExpandClick = () => {
+        this.setState(state => ({ expanded: !state.expanded }));
+    };
+
     render() {
         const { classes, name, styleProps, onClick } = this.props;
 
@@ -77,26 +89,32 @@ class StyleCard extends React.Component<Props, any> {
 
         return (
             <Card className={classes.card}>
-                <CardActionArea onClick={onClick}>
-                    <CardContent>
-                        <Typography className={classes.name} style={styleProps}>
-                            {name}
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions className={classes.actions} disableActionSpacing>
-                    <div className={classes.stylePropsContainer}>
-                        <Typography
-                            className={classes.properties}
-                            color="textSecondary"
-                        >
-                            {styleString}
-                        </Typography>
-                    </div>
-                    <IconButton className={classes.expand}>
+                <div className={classes.cardMainDiv}>
+                    <CardActionArea onClick={onClick}>
+                        <CardContent>
+                            <Typography
+                                className={classes.name}
+                                style={styleProps}>
+                                {name}
+                            </Typography>
+                            <Typography
+                                className={classes.properties}
+                                color="textSecondary">
+                                {styleString}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                    <IconButton
+                        className={classes.expand}
+                        onClick={this.handleExpandClick}>
                         <ExpandMoreIcon />
                     </IconButton>
-                </CardActions>
+                </div>
+                <Collapse in={this.state.expanded} timeout="auto" unmountOnExit>
+                    <CardContent>
+                        <Typography>Controls go here!</Typography>
+                    </CardContent>
+                </Collapse>
             </Card>
         );
     }
