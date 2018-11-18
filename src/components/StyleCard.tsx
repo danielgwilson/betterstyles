@@ -1,19 +1,18 @@
 import React from "react";
 
-import { Theme } from "@material-ui/core/styles/createMuiTheme";
-import createStyles from "@material-ui/core/styles/createStyles";
-import withStyles, { WithStyles } from "@material-ui/core/styles/withStyles";
-
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import { Collapse } from "@material-ui/core";
-import CardContent from "@material-ui/core/CardContent";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import IconButton from "@material-ui/core/IconButton";
-// import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-
+import { Theme, createStyles, withStyles } from "@material-ui/core";
+import classNames from "classnames";
 import "typeface-roboto";
+
+import {
+    Card,
+    CardActionArea,
+    CardContent,
+    Collapse,
+    IconButton,
+    Typography
+} from "@material-ui/core";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const styles = createStyles({
     card: {
@@ -73,7 +72,7 @@ class StyleCard extends React.Component<Props, State> {
     };
 
     handleExpandClick = () => {
-        this.setState(state => ({ expanded: !state.expanded }));
+        this.setState((state: State) => ({ expanded: !state.expanded }));
     };
 
     render() {
@@ -105,7 +104,9 @@ class StyleCard extends React.Component<Props, State> {
                         </CardContent>
                     </CardActionArea>
                     <IconButton
-                        className={classes.expand}
+                        className={classNames(classes.expand, {
+                            [classes.expandOpen]: this.state.expanded
+                        })}
                         onClick={this.handleExpandClick}>
                         <ExpandMoreIcon />
                     </IconButton>
