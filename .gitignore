@@ -62,6 +62,7 @@ bin
 node_modules/**
 typings/**
 .vscode/**
+build/**
 
 # Misc
 *.cer
