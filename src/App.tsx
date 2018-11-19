@@ -4,6 +4,8 @@ import "./App.css";
 import StyleCard from "./components/StyleCard";
 import { applyStyle } from "./scripts";
 
+import withRoot from "./withRoot";
+
 class App extends Component {
     render() {
         const styleCards = [
@@ -56,4 +58,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default withRoot(App);

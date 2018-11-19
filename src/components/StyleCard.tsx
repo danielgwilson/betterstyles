@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Theme, createStyles, withStyles } from "@material-ui/core";
+import { Theme, createStyles, withStyles, WithStyles } from "@material-ui/core";
 import classNames from "classnames";
 import "typeface-roboto";
 
@@ -14,47 +14,54 @@ import {
 } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
-const styles = createStyles({
-    card: {
-        minWidth: 275,
-        marginBottom: 8
-    },
-    cardMainDiv: {
-        display: "flex"
-    },
-    bullet: {
-        display: "inline-block",
-        margin: "0 2px",
-        transform: "scale(0.8)"
-    },
-    title: {
-        fontSize: 14
-    },
-    pos: {
-        marginBottom: 12
-    },
-    stylePropsContainer: {
-        padding: "12px 8px 8px 12px"
-    },
-    properties: {
-        fontSize: 10
-    },
-    name: {
-        fontSize: "11pt",
-        fontFamily: "Calibri"
-    },
-    expand: {
-        transform: "rotate(0deg)",
-        top: "50%",
-        margin: "auto"
-    },
-    expandOpen: {
-        transform: "rotate(180deg)"
-    },
-    actions: {
-        display: "flex"
-    }
-});
+const styles = (theme: Theme) =>
+    createStyles({
+        card: {
+            minWidth: 275,
+            marginBottom: 8
+        },
+        cardMainDiv: {
+            display: "flex"
+        },
+        bullet: {
+            display: "inline-block",
+            margin: "0 2px",
+            transform: "scale(0.8)"
+        },
+        title: {
+            fontSize: 14
+        },
+        pos: {
+            marginBottom: 12
+        },
+        stylePropsContainer: {
+            padding: "12px 8px 8px 12px"
+        },
+        properties: {
+            fontSize: 10
+        },
+        name: {
+            fontSize: "11pt",
+            fontFamily: "Calibri"
+        },
+        expand: {
+            transform: "rotate(0deg)",
+            top: "50%",
+            margin: "auto",
+            transition: theme.transitions.create("transform", {
+                duration: theme.transitions.duration.shortest
+            }),
+            [theme.breakpoints.up("sm")]: {
+                marginRight: -8
+            }
+        },
+        expandOpen: {
+            transform: "rotate(180deg)"
+        },
+        actions: {
+            display: "flex"
+        }
+    });
 
 interface Props extends WithStyles<typeof styles> {
     name: string;
