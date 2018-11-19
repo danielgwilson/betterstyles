@@ -1,19 +1,27 @@
 export function applyStyle(style: any) {
     Word.run(function(context) {
         const doc = context.document;
-        let selectedRange: any = doc.getSelection();
-        const selectedParagraphs = selectedRange.paragraphs;
+        let target = null;
+        const selectedRange: Word.Range = doc.getSelection();
+        selectedRange.load("isEmpty");
 
-        // if (selectedParagraphs.items.length == 1) {
-        //     selectedRange = selectedParagraphs.getFirst();
-        // }
+        return context
+            .sync()
+            .then(function() {
+                if (selectedRange.isEmpty) {
+                    const selectedParagraphs = selectedRange.paragraphs;
+                    const firstParagraph = selectedParagraphs.getFirst();
+                    target = firstParagraph;
+                } else {
+                    target = selectedRange;
+                }
 
-        selectedRange.font.set({
-            name: style.fontFamily,
-            size: style.fontSize
-        });
-
-        return context.sync();
+                target.font.set({
+                    name: style.fontFamily,
+                    size: style.fontSize
+                });
+            })
+            .then(context.sync);
     }).catch(function(error) {
         console.log("Error: " + error);
         if (error instanceof OfficeExtension.Error) {
