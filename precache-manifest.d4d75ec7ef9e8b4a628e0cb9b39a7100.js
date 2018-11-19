@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "d69924b98acd849cdeba9fbff3f88ea6",
-    "url": "/betterstyles/static/media/roboto-latin-300italic.d69924b9.woff2"
+    "revision": "210a7c781f5a354a0e4985656ab456d9",
+    "url": "/betterstyles/static/media/roboto-latin-300italic.210a7c78.woff"
   },
   {
-    "revision": "491326e6015b1d1cf6c1",
-    "url": "/betterstyles/static/css/main.459760ae.chunk.css"
+    "revision": "c983094ea539911c3e55",
+    "url": "/betterstyles/static/css/main.60b4d1fb.chunk.css"
   },
   {
-    "revision": "bc833e725c137257c2c42a789845d82f",
-    "url": "/betterstyles/static/media/roboto-latin-900italic.bc833e72.woff"
+    "revision": "7b770d6c53423deb1a8e49d3c9175184",
+    "url": "/betterstyles/static/media/roboto-latin-900italic.7b770d6c.woff2"
   },
   {
-    "revision": "f4b3d5d62e762d92bc70",
-    "url": "/betterstyles/static/js/1.f4b3d5d6.chunk.js"
+    "revision": "495780f57bba9f9e8f49",
+    "url": "/betterstyles/static/js/1.495780f5.chunk.js"
   },
   {
     "revision": "a55440a91fb1a97a1464",
@@ -48,44 +48,40 @@ self.__precacheManifest = [
     "url": "/betterstyles/static/media/roboto-latin-100.e9dbbe8a.woff"
   },
   {
-    "revision": "6232f43d15b0e7a0bf0fe82e295bdd06",
-    "url": "/betterstyles/static/media/roboto-latin-100italic.6232f43d.woff2"
-  },
-  {
     "revision": "d704bb3d579b7d5e40880c75705c8a71",
     "url": "/betterstyles/static/media/roboto-latin-100italic.d704bb3d.woff"
+  },
+  {
+    "revision": "6232f43d15b0e7a0bf0fe82e295bdd06",
+    "url": "/betterstyles/static/media/roboto-latin-100italic.6232f43d.woff2"
   },
   {
     "revision": "a1471d1d6431c893582a5f6a250db3f9",
     "url": "/betterstyles/static/media/roboto-latin-300.a1471d1d.woff"
   },
   {
-    "revision": "491326e6015b1d1cf6c1",
-    "url": "/betterstyles/static/js/main.491326e6.chunk.js"
+    "revision": "c983094ea539911c3e55",
+    "url": "/betterstyles/static/js/main.c983094e.chunk.js"
   },
   {
-    "revision": "210a7c781f5a354a0e4985656ab456d9",
-    "url": "/betterstyles/static/media/roboto-latin-300italic.210a7c78.woff"
-  },
-  {
-    "revision": "bafb105baeb22d965c70fe52ba6b49d9",
-    "url": "/betterstyles/static/media/roboto-latin-400.bafb105b.woff"
+    "revision": "d69924b98acd849cdeba9fbff3f88ea6",
+    "url": "/betterstyles/static/media/roboto-latin-300italic.d69924b9.woff2"
   },
   {
     "revision": "d8bcbe724fd6f4ba44d0ee6a2675890f",
     "url": "/betterstyles/static/media/roboto-latin-400italic.d8bcbe72.woff2"
   },
   {
-    "revision": "9680d5a0c32d2fd084e07bbc4c8b2923",
-    "url": "/betterstyles/static/media/roboto-latin-400italic.9680d5a0.woff"
+    "revision": "bafb105baeb22d965c70fe52ba6b49d9",
+    "url": "/betterstyles/static/media/roboto-latin-400.bafb105b.woff"
   },
   {
     "revision": "de8b7431b74642e830af4d4f4b513ec9",
     "url": "/betterstyles/static/media/roboto-latin-500.de8b7431.woff"
   },
   {
-    "revision": "ffcc050b2d92d4b14a4fcb527ee0bcc8",
-    "url": "/betterstyles/static/media/roboto-latin-500italic.ffcc050b.woff"
+    "revision": "9680d5a0c32d2fd084e07bbc4c8b2923",
+    "url": "/betterstyles/static/media/roboto-latin-400italic.9680d5a0.woff"
   },
   {
     "revision": "510dec37fa69fba39593e01a469ee018",
@@ -94,6 +90,10 @@ self.__precacheManifest = [
   {
     "revision": "cf6613d1adf490972c557a8e318e0868",
     "url": "/betterstyles/static/media/roboto-latin-700.cf6613d1.woff"
+  },
+  {
+    "revision": "ffcc050b2d92d4b14a4fcb527ee0bcc8",
+    "url": "/betterstyles/static/media/roboto-latin-500italic.ffcc050b.woff"
   },
   {
     "revision": "010c1aeee3c6d1cbb1d5761d80353823",
@@ -108,15 +108,15 @@ self.__precacheManifest = [
     "url": "/betterstyles/static/media/roboto-latin-900.8c2ade50.woff"
   },
   {
-    "revision": "7b770d6c53423deb1a8e49d3c9175184",
-    "url": "/betterstyles/static/media/roboto-latin-900italic.7b770d6c.woff2"
+    "revision": "bc833e725c137257c2c42a789845d82f",
+    "url": "/betterstyles/static/media/roboto-latin-900italic.bc833e72.woff"
   },
   {
-    "revision": "f4b3d5d62e762d92bc70",
-    "url": "/betterstyles/static/css/1.8eb33638.chunk.css"
+    "revision": "495780f57bba9f9e8f49",
+    "url": "/betterstyles/static/css/1.1e72aabd.chunk.css"
   },
   {
-    "revision": "b1cad7174213e6cd04bce9c336065b4b",
+    "revision": "a152338f5f31120bc3a47722889cd13a",
     "url": "/betterstyles/index.html"
   }
 ];
