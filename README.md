@@ -2,6 +2,18 @@
 
 This is an add-in for Word that allows users a richer theming and styling experience.
 
+This is more aspirational rather than complete; things I'd have included if we pursued it further:
+
+- Inline style controls in the "\/" dropdown
+- Style themes that persist by document and are shareable—user theme "library"
+- Shareable through UI and by exporting CSS-like thing
+- Styles affect paragraph rank like real styles dialog
+- Markdown shortcuts for styles (e.g. "# " = H1, but assignable by user)
+- Fancy styles like full Monaco-dark-themed code blocks and LaTeX math blocks
+- Recommended styles based on current definitions
+- Community styles / popular styles in org
+- Tenant-level styles
+
 ## Using the add-in
 
 ### Live (hosted on GitHub pages)
